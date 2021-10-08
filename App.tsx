@@ -50,9 +50,10 @@ const App = () => {
   }, [])
 
   const handleButtonPress = useCallback((value: string) => {
+    const resultIsNumber =  !!result && !isNaN(Number(result)) && !/infinity/i.test(String(result))
     if (value.match(/[0-9\.]/)) {
       setCount(count + value)
-    } else if (!!result && value.match(/[|\+×−÷]|DEL/) && !count.length) {
+    } else if (resultIsNumber && value.match(/[|\+×−÷]|DEL/) && !count.length) {
       if (value === 'DEL') {
         setCount(String(result).slice(0, String(result).length - 1))
         setResult("")
