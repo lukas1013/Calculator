@@ -94,7 +94,7 @@ const App = () => {
         <TextInput style={styles.input}
           scrollEnabled={true}
           multiline={true}
-          numberOfLines={3}
+          numberOfLines={10}
           editable={false}
           defaultValue={"0"}
           keyboardType={"numeric"}

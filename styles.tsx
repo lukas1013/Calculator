@@ -21,14 +21,17 @@ const styles = StyleSheet.create({
   },
   scroll: {
     width: '90%',
-    maxHeight: 50,
-    overflow: 'scroll'
+    height: 80,
+    maxHeight: 80,
+    overflow: 'scroll',
   },
   scrollContentContainer: {
     width: '100%',
     alignItems: 'center',
     height: 'auto',
-    marginVertical: '1%'
+    marginVertical: '1%',
+    alignSelf: 'baseline',
+    paddingVertical: '2%'
   },
   input: {
     width: '100%',
@@ -37,7 +40,8 @@ const styles = StyleSheet.create({
     color: '#120908',
     backgroundColor: '#c7c9ff',
     padding: '2%',
-    overflow: 'scroll'
+    overflow: 'scroll',
+    borderRadius: 10
   },
   buttonContainer: {
     width: '92%',
