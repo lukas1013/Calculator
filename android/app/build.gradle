@@ -153,10 +153,10 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file('rks.keystore')
-            storePassword new Scanner(System.in).nextLine()
-            keyAlias new Scanner(System.in).nextLine()
-            keyPassword new Scanner(System.in).nextLine()
+            storeFile file('prod.keystore')
+            storePassword 'prod123'
+            keyAlias 'prodkey'
+            keyPassword 'prod123'
         }
     }
     buildTypes {
@@ -175,6 +175,7 @@ android {
             shrinkResources true
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
 
