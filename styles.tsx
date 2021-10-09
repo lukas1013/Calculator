@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#006eff',
     overflow: 'hidden',
     borderRadius: 5,
-    padding: '1%',
+    padding: '2%',
     elevation: 3,
     shadowColor: '#63608a'
   },
